@@ -1,0 +1,12 @@
+body {
+    background-color: #dbd6d6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imagen {
+    width: 320px;
+}
+
+#Resultado {
+    margin-top: 20px;
+}

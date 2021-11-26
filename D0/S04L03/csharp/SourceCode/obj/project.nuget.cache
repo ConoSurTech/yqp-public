@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "2YFWLdHSM5jhHXFn+I9etFQCs7A4AqIoVBtrVurpF4oy3KPpLDl21OsKM/0ZiBCk8/gJivsw1lDbABK0/sCb1g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pdiloreto\\source\\repos\\ConsoleCalculator\\ConsoleCalculator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pdiloreto\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.9\\microsoft.netcore.app.runtime.win-x64.3.1.9.nupkg.sha512",
+    "C:\\Users\\pdiloreto\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.9\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.9.nupkg.sha512",
+    "C:\\Users\\pdiloreto\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.9\\microsoft.aspnetcore.app.runtime.win-x64.3.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}
