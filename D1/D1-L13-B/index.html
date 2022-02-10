@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!--  Configuracion del charset de HTTP -->
+    <meta charset="UTF-8">
+
+    <title>Ejemplo S02L13 B</title>
+
+    <!-- CSS -->
+    <style>
+
+        body {
+        font-family: verdana;
+        }
+
+        #miProgreso {
+        width: 100%;
+        background-color: #ddd;
+        }
+
+        #miBarra {
+        width: 0%;
+        height: 30px;
+        background-color: #04aa6d;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        }
+
+    </style>
+    
+    <!-- JavaScript -->
+    <script>
+
+        // Función iniciar()
+        function iniciar() {
+            var btni = document.getElementById("iniciar");
+            var btnr = document.getElementById("reiniciar");
+            var elem = document.getElementById("miBarra");
+            var width = 0;
+            var id = setInterval(mover, 10);
+            function mover() {
+                if (width < 100) {
+                btni.disabled = true;
+                btnr.disabled = true;
+                width++;
+                elem.style.width = width + "%";
+                elem.innerHTML = width + "%";
+                } else {
+                clearInterval(id);
+                btni.disabled = false;
+                btnr.disabled = false;
+                elem.innerHTML = "Finalizado";
+                }
+            }
+        }
+
+        // Función reiniciar()
+        function reiniciar() {
+            var elem = document.getElementById("miBarra");
+            var width = 0;
+            elem.style.width = width + "%";
+            elem.innerHTML = width + "%";
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Barra de Progreso</h1>
+
+    <div id="miProgreso">
+      <div id="miBarra">0%</div>
+    </div>
+    <br>
+
+    <!-- Botón de acción que llama a la función iniciar() -->
+    <button id="iniciar" onclick="iniciar()">¡Iniciar!</button>
+    <!-- Botón de acción que llama a la función reiniciar() -->
+    <button id="reiniciar" onclick="reiniciar()">Resetear</button>
+    
+</body>
+</html>

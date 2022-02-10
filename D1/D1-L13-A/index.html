@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <!--  Configuracion del charset de HTTP -->
+    <meta charset="UTF-8">
+
+    <title>Ejemplo S02L13 B</title>
+
+    <!-- CSS -->
+    <style>
+
+        body {
+        font-family: verdana;
+        }
+
+        #miProgreso {
+        width: 100%;
+        background-color: #ddd;
+        }
+
+        #miBarra {
+        width: 0%;
+        height: 30px;
+        background-color: #04aa6d;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        }
+
+    </style>
+    
+    <!-- JavaScript -->
+    <script>
+
+        // Función iniciar()
+        function iniciar() {
+            var elem = document.getElementById("miBarra");
+            var width = 0;
+            var id = setInterval(mover, 10);
+            function mover() {
+                if (width < 100) {
+                width++;
+                elem.style.width = width + "%";
+                elem.innerHTML = width + "%";
+                } else {
+                clearInterval(id);
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Barra de Progreso</h1>
+
+    <div id="miProgreso">
+      <div id="miBarra">0%</div>
+    </div>
+    
+    <br>
+
+    <!-- Botón de acción que llama a la función iniciar() -->
+    <button onclick="iniciar()">¡Iniciar!</button>
+    
+</body>
+</html>
